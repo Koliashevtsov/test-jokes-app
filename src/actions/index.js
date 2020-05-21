@@ -79,9 +79,26 @@ const loadJokeTextInput = (chuckService, jokeText) => (dispatch) => {
     .catch(err => dispatch(loadArrJokesError(err)))
 }
 
+
+// handle favorite joke
+const addToFavorite = (id) => {
+  return {
+    type: 'JOKES_LIKED',
+    payload: id
+  };
+}
+const deleteFromFavorite = (id) => {
+  return {
+    type: 'JOKES_UNLIKED',
+    payload: id
+  };
+}
+
 export {
   loadCategoryFromApi,
   loadJokeRandom,
   loadJokeCategName,
-  loadJokeTextInput
+  loadJokeTextInput,
+  addToFavorite,
+  deleteFromFavorite
 }

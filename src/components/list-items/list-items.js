@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ItemCard from '../item-card';
+
 const ListItems = (props) => {
   const { list } = props;
   return (
@@ -8,7 +10,7 @@ const ListItems = (props) => {
         { list.map((item, index) => {
           return (
             <li key={index}>
-              { item.value }
+              <ItemCard item={item}/>
             </li>
           );
         }) }
