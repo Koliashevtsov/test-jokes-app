@@ -1,0 +1,92 @@
+.move-panel-btn{display:none;margin-left:auto;height:28px;cursor:pointer}.move-panel-btn .btn-text{font-family:Roboto;font-style:normal;font-weight:bold;font-size:20px;line-height:28px;color:#333;font-weight:500;color:#ABABAB;margin-left:10px;vertical-align:6px}@media (min-width: 768px) and (max-width: 1023px){.move-panel-btn{display:block}}
+
+.main-header{display:flex;margin-bottom:78px}.main-header .msi{font-family:Roboto;font-style:normal;font-weight:bold;font-size:20px;line-height:28px;color:#333}
+
+.input-radio{margin-bottom:10px}.input-radio:last-of-type{margin-bottom:20px}.input-radio .radio-indicator{display:inline-block;vertical-align:-2.5px;width:20px;height:20px;margin-right:15px;border:2px solid #ABABAB;border-radius:50%}.input-radio .checked{border:2px solid #333}.input-radio .checked .point{display:inline-block;width:10px;height:10px;margin-left:3px;vertical-align:5px;background-color:#333;border-radius:50%}.input-radio .label{font-style:normal;font-weight:normal;font-size:18px;line-height:26px;color:#333;cursor:pointer}.input-radio span{cursor:pointer}
+
+.button-submit{font-style:normal;font-weight:bold;font-size:16px;line-height:22px;color:#fff;padding:10px 40px;border:none;border-radius:10px;background:linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);cursor:pointer}
+
+.category-icon{font-style:normal;font-weight:500;font-size:12px;line-height:16px;letter-spacing:2px;text-transform:uppercase;color:#ABABAB;display:inline-block;padding:4px 13px;margin-right:10px;margin-bottom:6px;border-radius:6px;border:2px solid #F8F8F8;cursor:pointer}.selected{background-color:#F8F8F8;color:#333}
+
+.categories-list{margin-top:20px;margin-bottom:14px}.categories-list .items{display:flex;flex-flow:row wrap;justify-content:space-between}
+
+input[type='text']{display:block;width:100%;margin-top:20px;line-height:22px;padding:10px 15px;border:2px solid #333;border-radius:10px;color:#ABABAB}
+
+.like-icon{text-align:right;color:#FF6767;cursor:pointer}
+
+.icon-comment{flex:0 0 40px;height:40px;line-height:50px;border-radius:50%;background-color:#fff;text-align:center}.sm{background-color:#F8F8F8}
+
+.joke-link{margin-bottom:5px}.joke-link span{font-style:normal;font-weight:500;font-size:10px;line-height:14px;color:#ABABAB;margin-right:5px}.joke-link span a{color:#8EA7FF}
+
+.joke-footer{display:flex;flex-wrap:wrap;margin-top:23px}.joke-footer .joke-updated{font-style:normal;font-weight:500;font-size:10px;line-height:14px;color:#ABABAB;flex-grow:1;font-weight:normal;line-height:26px}.joke-footer .categories{font-style:normal;font-weight:500;font-size:12px;line-height:16px;letter-spacing:2px;text-transform:uppercase;color:#ABABAB;font-size:10px;line-height:14px;padding:6px 20px;background-color:#fff;border-radius:6px;color:#333}.joke-footer .sml{border:2px solid #F8F8F8}
+
+.item-card{background-color:#F8F8F8;padding:40px;margin-top:20px;border-radius:20px}.item-card .squiare{display:flex;flex-flow:row nowrap}.item-card .squiare .joke-fields{margin-left:20px;flex-grow:1}.item-card .squiare .joke-fields .joke-value{font-style:normal;font-weight:normal;font-size:18px;line-height:26px;color:#333}.small{background-color:#fff;padding:20px;border-radius:10px;border:1px solid #F8F8F8;box-shadow:0px 4px 6px rgba(0,0,0,0.1)}.small .squiare .joke-fields .joke-value{font-size:14px;line-height:20px}
+
+.main-panel{flex:1 1 960px;min-width:380px;background-color:#fff}.main-panel .container{width:70.83333%;margin:auto;margin-top:40px;margin-bottom:140px}.main-panel .container h1{line-height:44px}.main-panel .container h2{line-height:44px;font-weight:500}.main-panel .container .container-form{margin-top:43px;margin-bottom:40px}@media (min-width: 768px) and (max-width: 1023px){.main-panel .container{width:100%;margin:0;padding:40px}}
+
+.side-panel{flex:0 1 480px;min-width:380px;min-height:100vh;background-color:#F8F8F8}.side-panel .container{padding:40px}.side-panel .container .favourite{font-family:Roboto;font-style:normal;font-weight:bold;font-size:20px;line-height:28px;color:#333;font-weight:500;color:#ABABAB}@media (min-width: 768px) and (max-width: 1023px){.side-panel{display:none}}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.app{font-family:"Roboto";display:flex}
+

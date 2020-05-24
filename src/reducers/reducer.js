@@ -27,7 +27,7 @@ const reducer = (state, action) => {
     return {
       categList: [],
       jokesList: [],
-      jokesFavoriteList: []
+      jokesFavoriteList: [],
     };
   }
   switch (action.type) {

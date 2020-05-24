@@ -1,13 +1,16 @@
 import React from 'react';
 
-import './like-icon.css';
+import Icon from './icon';
+
+import './like-icon.scss';
 
 const LikeIcon = (props) => {
   const { isFavorite, handleLikeClick } = props;
-  const clazzName = isFavorite ? 'liked' : ''
+
+  const icon = isFavorite ? 'liked' : 'unliked'
   return (
-    <div className={clazzName} onClick={handleLikeClick}>
-      LikeIcon
+    <div className="like-icon" onClick={handleLikeClick}>
+      <Icon icon={icon}/>
     </div>
   );
 }

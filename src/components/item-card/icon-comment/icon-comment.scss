@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.icon-comment {
+  flex: 0 0 40px;
+  height: 40px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: $backgroundColorPrimary;
+  text-align: center;
+}
+.sm {
+  background-color: $backgroundColorSecondary;
+}

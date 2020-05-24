@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+.joke-link {
+  margin-bottom: 5px;
+  
+  span {
+    @include fontCardMeta;
+    margin-right: 5px;
+
+    a {
+      color: $colorBlue;
+    }
+  }
+}

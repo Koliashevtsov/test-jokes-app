@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.category-icon {
+  @include itemIconCategory;
+  cursor: pointer;
+}
+.selected {
+  background-color: $backgroundColorSecondary;
+  color: $colorPrimary;
+}

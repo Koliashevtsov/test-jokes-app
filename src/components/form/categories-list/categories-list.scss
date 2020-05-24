@@ -1,0 +1,14 @@
+@import '../../../styles/mixins.scss';
+
+
+.categories-list {
+  margin-top: 20px;
+  margin-bottom: 14px;
+
+  .items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+}

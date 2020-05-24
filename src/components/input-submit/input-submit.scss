@@ -1,0 +1,6 @@
+@import '../../styles/mixins';
+
+.button-submit {
+  @include itemButtonSubmit;
+  cursor: pointer;
+}

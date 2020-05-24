@@ -6,7 +6,7 @@ import ListItems from '../../components/list-items';
 const ListFavoriteItemsContainer = () => {
   const list = useSelector(state => state.jokesFavoriteList)
   return (
-    <ListItems list={list}/>
+      <ListItems list={list} view="small"/>
   );
 }
 export default ListFavoriteItemsContainer;

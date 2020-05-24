@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './input-submit.scss';
+
 const InputSubmit = () => {
   return (
-    <input type="submit" value="Get a joke"/>
+    <input className="button-submit" type="submit" value="Get a joke"/>
   );
 }
 export default InputSubmit;

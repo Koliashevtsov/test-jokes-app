@@ -11,10 +11,7 @@ const LikeIconContainer = ({ id }) => {
   const jokesFavoriteList = useSelector(state => state.jokesFavoriteList)
 
   const handleLikeClick = () => {
-    // move current joke
     isFavorite ? dispatch(deleteFromFavorite(id)) : dispatch(addToFavorite(id))
-    // change state icon to oposite
-    setIsFavorite(i => !i)
   }
 
   useEffect(() => {

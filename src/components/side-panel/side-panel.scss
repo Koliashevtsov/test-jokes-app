@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.side-panel {
+  flex: 0 1 480px;
+  min-width: 380px;
+  min-height: 100vh;
+  background-color: $backgroundColorSecondary;
+
+  .container {
+    padding: 40px;
+
+    .favourite {
+      @include fontFavourite;
+    }
+  }
+  
+  @include tablet {
+    display: none;
+  }
+}

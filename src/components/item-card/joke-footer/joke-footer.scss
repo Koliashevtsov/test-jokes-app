@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.joke-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 23px;
+
+  .joke-updated {
+    @include fontCardMeta;
+    flex-grow: 1;
+    font-weight: $fontWeightNormal;
+    line-height: 26px;
+  }
+
+  .categories {
+    @include fontIconCategory;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 6px 20px;
+    background-color: $backgroundColorPrimary;
+    border-radius: 6px;
+    color: $colorPrimary;
+  }
+
+  .sml {
+    border: 2px solid $backgroundColorSecondary;
+  }
+
+}

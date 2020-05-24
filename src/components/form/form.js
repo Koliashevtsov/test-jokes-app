@@ -10,6 +10,7 @@ import SearchPanel from './search-panel';
 
 import { ChuckServiceContext } from '../chuck-service-context';
 
+
 const Form = (props) => {
   const dispatch = useDispatch();
   const chuckService = useContext(ChuckServiceContext);
@@ -21,6 +22,7 @@ const Form = (props) => {
   const [ categoryName, setCategoryName ] = useState(null);
 
   const handleNameCategory = (categoryName) => {
+    console.log(categoryName);
     setCategoryName(categoryName)
   }
 
@@ -47,12 +49,12 @@ const Form = (props) => {
         return
     }
 
-    // clear term 
+    // clear term
     setTerm('')
   }
 
   return (
-    <form onSubmit={handleOnSubmit}>
+    <form className="form" onSubmit={handleOnSubmit}>
       <InputRadio cont="Random" isActive={isActive} changeIsActive={setIsActive}/>
       <InputRadio cont="From categories" isActive={isActive} changeIsActive={setIsActive}>
         <CategoriesListContainer handleTerm={handleNameCategory}/>
